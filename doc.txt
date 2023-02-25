@@ -1,1 +1,31 @@
-
+In this project I use file as the database. This project consists of 
+- Adress.java, 
+- Controller.java,
+- Delete.java,
+- EmailAdress.java,
+- GenerealMethods.java,
+- GenerateId.java,
+- Name.java,
+- PhoneNumber.java,
+- ReadFromFile.java,
+- Search.java,
+- SurName.java,
+- Update.java,
+- updateDeleted.java,
+- User.java,
+- WriteInFile.java classes.
+ 
+In class GenerateId generates automatically sequense number as Id in code.
+In class Address has implemented the address field validation.
+In class Name has implemented the name field validation.
+In class SurName has implemented the surname field validation.
+In class PhoneNumber has implemented the phone number field validation.
+In class EmailAdress has implemented the mail field validation.
+The request from console passes to the mentioned classes to undergo appropriate validation by Controller class.
+After validation data pass to file(db) by User class.
+The CRUD has implemented in WriteInFile.java, ReadFromFile.java, Update.java, Delete.java. 
+The data can saves in db following this format
+-name and surname consists of letters(A-z, a-z) characters(" ", "-" (in inside position))
+-phonenumber can be only numbers 11 length
+-the data of the mail field can't contain white space and handles for "@gmail.com" and "@mail.ru" extentions
+-address can contain letters numbers and characters(" ", "/", "-", ".")
